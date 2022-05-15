@@ -5,7 +5,10 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "build:all": "rm -rf ./dist && nx build && nx build api",
+    "copy:api-static": "cp -r ./dist/apps/my-site ./dist/apps/api/ui",
+    "host": "node ./dist/apps/api/main.js"
   },
   "private": true,
   "dependencies": {

@@ -8,6 +8,9 @@ import { APIResponse, API_URL } from '@my-org/api-interface';
 
 const app = express();
 
+// TODO: need for production only
+app.use('/', express.static(__dirname + '/ui'));
+
 app.get(API_URL, (req, res) => {
   res.send({ message: 'Welcome to api!' } as APIResponse);
 });
