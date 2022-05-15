@@ -2,7 +2,7 @@
 
 ## Create empty workspace
 
-> npx create-nx-workspace@latest my-org
+> ❯ npx create-nx-workspace@latest my-org
 
 ```
 apps              [an empty workspace with no plugins with a layout that works best for building apps]
@@ -19,18 +19,20 @@ react-express     [a workspace with a full stack application (React + Express)]
 angular-nest      [a workspace with a full stack application (Angular + Nest)]
 ```
 
-> **apps**
+> ❯ **apps**
 
-> Use Nx Cloud? **No**
+> ❯ Use Nx Cloud? **No**
 
 ## Create React application and library
 
-> npm install -d @nrwl/react
+> ❯ npm install -d @nrwl/react
 
-> ❯ nx g @nrwl/react:app
+> ❯ nx g @nrwl/react:app my-site
 
 ```
 ✔ What name would you like to use for the application? · my-site
 ✔ Which stylesheet format would you like to use? · css
 ✔ Would you like to add React Router to this application? (y/N) · false
 ```
+
+> ❯ nx g @nrwl/react:lib ui-login
