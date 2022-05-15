@@ -23,7 +23,7 @@ angular-nest      [a workspace with a full stack application (Angular + Nest)]
 
 > ❯ Use Nx Cloud? **No**
 
-## Create React application and library
+## Create React application and library along with react-component
 
 > ❯ npm install -d @nrwl/react
 
@@ -37,3 +37,9 @@ angular-nest      [a workspace with a full stack application (Angular + Nest)]
 
 > ❯ nx g @nrwl/react:lib ui-login
 > ❯ nx g @nrwl/react:component --project=ui-login page-title
+
+## Create express application
+
+> ❯ npm install -D @nrwl/express
+
+> ❯ nx g @nrwl/express:app api --frontendProject=my-site

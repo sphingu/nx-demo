@@ -48,7 +48,8 @@
       "defaultConfiguration": "development",
       "options": {
         "buildTarget": "my-site:build",
-        "hmr": true
+        "hmr": true,
+        "proxyConfig": "apps/my-site/proxy.conf.json"
       },
       "configurations": {
         "development": {
