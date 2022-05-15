@@ -2,19 +2,21 @@
 import styles from './app.module.css';
 import { UiLogin, PageTitle } from '@my-org/ui-login';
 import { useEffect, useState } from 'react';
+import { APIResponse, API_URL } from '@my-org/api-interface';
 
 export function App() {
-  const [message, setMessage] = useState<string>('Loading...');
-  useEffect(() => {
-    fetch('/api')
-      .then((res) => res.json())
-      .then((data) => setMessage(data?.message || ''));
+  const [response, setResponse] = useState<APIResponse>({
+    message: 'Loading...',
   });
-  console.log('RENDERING');
+  useEffect(() => {
+    fetch(API_URL)
+      .then((res) => res.json())
+      .then(setResponse);
+  }, []);
   return (
     <>
       <h1>Welcome to My-Site</h1>
-      <h2>Message from API : {message}</h2>
+      <h2>Message from API : {response.message}</h2>
       <UiLogin />
       <PageTitle />
     </>

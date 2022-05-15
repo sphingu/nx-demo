@@ -1,3 +1,5 @@
-export function apiInterface(): string {
-  return 'api-interface';
+export interface APIResponse {
+  message: string;
 }
+
+export const API_URL = '/api';
