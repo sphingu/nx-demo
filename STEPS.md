@@ -43,3 +43,7 @@ angular-nest      [a workspace with a full stack application (Angular + Nest)]
 > ❯ npm install -D @nrwl/express
 
 > ❯ nx g @nrwl/express:app api --frontendProject=my-site
+
+## Create TS library
+
+> ❯ nx g @nrwl/workspace:lib api-interface

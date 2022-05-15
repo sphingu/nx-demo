@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "api": "apps/api",
+    "api-interface": "libs/api-interface",
     "my-site": "apps/my-site",
     "my-site-e2e": "apps/my-site-e2e",
     "ui-login": "libs/ui-login"
