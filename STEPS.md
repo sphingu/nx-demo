@@ -36,3 +36,4 @@ angular-nest      [a workspace with a full stack application (Angular + Nest)]
 ```
 
 > ❯ nx g @nrwl/react:lib ui-login
+> ❯ nx g @nrwl/react:component --project=ui-login page-title
