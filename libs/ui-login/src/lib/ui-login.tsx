@@ -6,7 +6,7 @@ export interface UiLoginProps {}
 export function UiLogin(props: UiLoginProps) {
   return (
     <div className={styles['container']}>
-      <h1>Welcome to UiLogin!</h1>
+      <h1>Welcome to UiLogin Library!</h1>
     </div>
   );
 }
